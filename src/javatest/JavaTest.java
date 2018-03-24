@@ -100,24 +100,40 @@ public class JavaTest {
 //              System.out.println("Number is: "+sum);
 //          }
           
-            int num1 = (int)(Math.random()*100);
-            int num2 = (int)(Math.random()*100);
-            System.out.println("Number 1 is: "+num1);
-            System.out.println("Number 2 is: "+num2);
-            
-            if(num1 > num2)
-            {
-                System.out.println("Maximum number is: "+num1);
-            }
-            else if(num1 == num2)
-            {
-                System.out.println("The Number 1: "+num1+" and the Number2 : "+num2+" are both equal!, hmmm this almost never happens!");
-            }
-            else
-            {
-                System.out.println("Maximum number is: "+num2);
-            }
-          
+//            int num1 = (int)(Math.random()*100);
+//            int num2 = (int)(Math.random()*100);
+//            System.out.println("Number 1 is: "+num1);
+//            System.out.println("Number 2 is: "+num2);
+//            
+//            if(num1 > num2)
+//            {
+//                System.out.println("Maximum number is: "+num1);
+//            }
+//            else if(num1 == num2)
+//            {
+//                System.out.println("The Number 1: "+num1+" and the Number2 : "+num2+" are both equal!, hmmm this almost never happens!");
+//            }
+//            else
+//            {
+//                System.out.println("Maximum number is: "+num2);
+//            }
+              
+              Scanner sc = new Scanner(System.in);
+              System.out.print("Enter word 1: "); 
+              String one = sc.nextLine();
+              System.out.print("Enter word 2: ");         
+              String two = sc.nextLine();
+              
+              int compareTo = one.compareTo(two);
+              if(compareTo > 0)
+              {
+                  System.out.println("Word 1 is Smaller" +compareTo);
+              }
+              else if (compareTo < 0)
+              {
+                  System.out.println("Word 2 is Larger" +compareTo);
+              }
+              
           
    }
     
