@@ -85,68 +85,56 @@ public class JavaTest {
 //        }
 //        
 //      
-//        final double KILOS_PER_POUND = 0.454;
-//        final double METERS_PER_FOOT = 0.3046;
-//        final int i = 3;
-//        int a2 = 2, b =8;
-//        System.out.println("BMI Calculator");
-        //InputStreamReader isr = new InputStreamReader(System.in);
-        //BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-//        Scanner sc = new Scanner(System.in);
-//        System.out.println("Enter a Word: ");
-//        String input = sc.nextLine();
-//        
-//        System.out.print("Enter Weight(lbs): ");
-//        double weight = sc.nextDouble();
-//        
-//        System.out.print("Enter Height(feet): ");
-//        double height = sc.nextDouble();
-//        
-//        double MW = weight * KILOS_PER_POUND;
-//        double MH = height * METERS_PER_FOOT;
-//        
-//        double bmi = MW / (MH * MH);
-//        char a = input.charAt(i);
-//        int h = input.hashCode();
-//        String up = input.toUpperCase();
-//        String dw = input.toLowerCase();
-//        System.out.println("Yo! Your BMI is: "+bmi+ "Character is: "+a+ "hash is: "+h+ "Also: "+up+ "And: "+dw);
-        
-//          String url = "http://java.sun.com/j2se/1.4/docs/api";
-//          StringTokenizer tokenURL = new StringTokenizer(url,"/");
-//          System.out.println("Token count: "+tokenURL.countTokens());
-//          
-//          while(tokenURL.hasMoreTokens())
-//          {
-//              System.out.println(tokenURL.nextToken()+"\n");
-//              tokenURL.nextToken();
-//          }
 
-            System.out.print("Enter a number for a day: ");
-            Scanner sc = new Scanner(System.in);
-            int in = sc.nextInt();
-            String result;
-            switch(in)
-            {
-                case 1: result = "Monday";
-                break;
-                case 2: result = "Tuesday";
-                break;
-                case 3: result = "Wednesday";
-                break;
-                case 4: result = "Thursday";
-                break;
-                case 5: result = "Friday";
-                break;
-                case 6: result = "Saturday";
-                break;
-                case 7: result = "Sunday";
-                break;
-                default: result = "Invalid Day";
-                break;
-            }
-            System.out.println(result);
-            
+
+//          System.out.print("Enter a Number: ");
+//          Scanner sc = new Scanner(System.in);
+//          int number = sc.nextInt();
+//          int sum = 0;
+//          
+//          while(sum != number)
+//          {
+//              //number = (number - sum)/10;
+//              sum = number % 10;
+//              number = number / 10;
+//              System.out.println("Number is: "+sum);
+//          }
+          
+//            int num1 = (int)(Math.random()*100);
+//            int num2 = (int)(Math.random()*100);
+//            System.out.println("Number 1 is: "+num1);
+//            System.out.println("Number 2 is: "+num2);
+//            
+//            if(num1 > num2)
+//            {
+//                System.out.println("Maximum number is: "+num1);
+//            }
+//            else if(num1 == num2)
+//            {
+//                System.out.println("The Number 1: "+num1+" and the Number2 : "+num2+" are both equal!, hmmm this almost never happens!");
+//            }
+//            else
+//            {
+//                System.out.println("Maximum number is: "+num2);
+//            }
+              
+              Scanner sc = new Scanner(System.in);
+              System.out.print("Enter word 1: "); 
+              String one = sc.nextLine();
+              System.out.print("Enter word 2: ");         
+              String two = sc.nextLine();
+              
+              int compareTo = one.compareTo(two);
+              if(compareTo > 0)
+              {
+                  System.out.println("Word 1 is Smaller" +compareTo);
+              }
+              else if (compareTo < 0)
+              {
+                  System.out.println("Word 2 is Larger" +compareTo);
+              }
+              
+          
    }
     
 }
